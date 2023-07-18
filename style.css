@@ -6,6 +6,12 @@
     margin: 0;
 }
 
+.same-section {
+    max-width: 1440px;
+    padding: 20px 150px;
+    margin: 0 auto;
+}
+
 .btn-primary {
     border-radius: 48px;
     border: 0;
@@ -88,12 +94,11 @@ nav {
 
 /* banner styles */
 .banner {
-    max-width: 1440px;
-    padding: 20px 200px;
-    margin: auto;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
 .banner-title {
@@ -132,6 +137,48 @@ nav {
 
 /* header styles end */
 
+/* Online games funny videos styles */
+.online-game {
+    margin-top: 60px;
+}
+
+.online-game-title {
+    color: #0B0223;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.online-game-description {
+    color: #534C64;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.game-design-title {
+    /* figma theka neya */
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.online-game-container {
+    display: flex;
+    gap: 20px;
+}
+
+.game-content img {
+    max-width: 300px;
+}
+.game-content p{
+    color: #534C64;
+    font-weight: 500;
+}
+
+/* Online games funny videos styles end */
 
 /* responsive styles */
 
@@ -176,11 +223,12 @@ nav {
 
 /* tablet or medium device */
 @media screen and (min-width:576px) and (max-width:960px) {
-    nav{
+    nav {
         flex-direction: column;
         padding: 20px 50px;
         gap: 40px;
     }
+
     .banner {
         flex-direction: column-reverse;
         padding: 20px;
