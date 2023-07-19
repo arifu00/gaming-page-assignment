@@ -296,16 +296,99 @@ nav {
     max-width: 210px;
     border: 2px solid transparent;
 }
-.game-card-description{
+
+.game-card-description {
     font-size: 1.2rem;
     font-weight: 600;
 }
+
 .game-card-content:hover {
     border: 2px solid #FF42A5;
     color: #FF42A5;
 }
 
 /* game card section styles end */
+
+/* footer styles */
+footer {
+    background: #0B0223;
+}
+
+.footer-content {
+    padding: 120px 100px;
+}
+
+.footer-logo {
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.footer-logo-title {
+    color: #FFF;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.links-1>ul,
+.links-2>ul {
+    display: flex;
+    gap: 30px;
+}
+
+.links-1>ul>li,
+.links-2>ul>li {
+    list-style: none;
+}
+
+.f-links {
+    text-decoration: none;
+    color: #FFF;
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding: 5px;
+}
+
+.footer-social-icon,
+.footer-policy {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.policy-text {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-weight: 500;
+}
+
+.footer-copyright>ul {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.footer-copyright>ul>li {
+    list-style: none;
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-weight: 500;
+
+}
+
+
+/* footer styles end */
 /* responsive styles */
 
 /* mobile device */
@@ -389,23 +472,50 @@ nav {
         bottom: 150px;
         left: 5px;
     }
-    .game-card{
+
+    .game-card {
         padding: 0px;
     }
+
     .game-card-container {
         padding: 30px 5px;
         gap: 15px;
     }
+
     .game-card-content {
         max-width: 108px;
     }
-    .game-card-content img{
+
+    .game-card-content img {
         width: 50%;
     }
-    .game-card-description{
+
+    .game-card-description {
         font-size: .6rem;
         font-weight: 600;
     }
+    .footer-content{
+        padding: 100px 5px;
+    }
+    .footer-links,
+    .footer-social-icon,
+    .footer-policy,
+    .footer-copyright {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .f-links{
+        font-size: .9rem;
+    }
+    .policy-text,
+    .footer-copyright> uL> li{
+        font-size: .8rem;
+    }
+    .icon{
+        width: 60%;
+    }
+
 }
 
 
@@ -434,6 +544,7 @@ nav {
         justify-content: center;
         align-items: center;
     }
+
     .play-instantly {
         flex-direction: column;
         justify-content: center;
@@ -465,20 +576,25 @@ nav {
         bottom: 200px;
         left: -5px;
     }
-    .game-card{
+
+    .game-card {
         padding: 30px;
     }
+
     .game-card-container {
         padding: 30px 5px;
         gap: 25px;
     }
+
     .game-card-content {
         max-width: 110px;
     }
-    .game-card-content img{
+
+    .game-card-content img {
         width: 40%;
     }
-    .game-card-description{
+
+    .game-card-description {
         font-size: .7rem;
         font-weight: 600;
     }
