@@ -21,6 +21,17 @@
     font-size: 1.2rem;
     font-weight: 600;
     text-transform: uppercase;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    color: #000;
+    background-color: #4EC5F7;
+}
+
+.btn-secondary:hover {
+    color: #000;
+    background-color: #F948B2;
 }
 
 .btn-secondary {
@@ -32,6 +43,7 @@
     font-size: 1.2rem;
     font-weight: 600;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 /* header styles */
@@ -90,11 +102,18 @@ nav {
     gap: 10px;
 }
 
+.nav-special-link:hover {
+    background-color: rgb(15, 15, 15);
+    color: #FFF;
+}
+
 /* nav styles end */
 
 /* banner styles */
 .banner {
-
+    background-image: url('images/group14.png');
+    background-repeat: no-repeat;
+    background-size: contain;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -136,7 +155,57 @@ nav {
 /* banner styles end */
 
 /* header styles end */
+/* we are gamer section styles */
+.we-are-gamer {
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+}
 
+.gamer-container {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gamer-title {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: right;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.gamer-description {
+    color: #534C64;
+    text-align: right;
+    font-weight: 400;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.gamer-purpose-text {
+    color: #534C64;
+    text-align: right;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.purpose-design {
+    color: #534C64;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.gamer-btn {
+    text-align: right;
+}
+
+/* we are gamer section styles end */
 /* Online games funny videos styles */
 .funny-videos {
     margin-top: 60px;
@@ -212,8 +281,8 @@ nav {
 }
 
 .videos-card-content:hover .overlay {
-    opacity: .5;
-    border: 4px solid crimson;
+    opacity: .7;
+    border: 4px solid #FF42A5;
     border-radius: 16px;
 }
 
@@ -365,6 +434,10 @@ footer {
     margin-top: 40px;
 }
 
+.icon {
+    width: 80%;
+}
+
 .policy-text {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.60);
@@ -372,7 +445,7 @@ footer {
     font-weight: 500;
 }
 
-.footer-copyright>ul {
+.footer-copyright {
     display: flex;
     justify-content: center;
     gap: 10px;
@@ -426,6 +499,33 @@ footer {
 
     .banner-short-title {
         font-size: 4rem;
+    }
+
+    .we-are-gamer {
+        padding: 10px;
+    }
+
+    .gamer-container {
+        flex-direction: column;
+    }
+
+    .gamer-img img {
+        width: 90%;
+    }
+
+    .gamer-title {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .gamer-purpose-text {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .gamer-description,
+    .gamer-btn {
+        text-align: center;
     }
 
     .funny-videos {
@@ -494,9 +594,11 @@ footer {
         font-size: .6rem;
         font-weight: 600;
     }
-    .footer-content{
+
+    .footer-content {
         padding: 100px 5px;
     }
+
     .footer-links,
     .footer-social-icon,
     .footer-policy,
@@ -505,14 +607,17 @@ footer {
         justify-content: center;
         align-items: center;
     }
-    .f-links{
+
+    .f-links {
         font-size: .9rem;
     }
+
     .policy-text,
-    .footer-copyright> uL> li{
+    .footer-copyright>uL>li {
         font-size: .8rem;
     }
-    .icon{
+
+    .icon {
         width: 60%;
     }
 
@@ -531,6 +636,33 @@ footer {
         flex-direction: column-reverse;
         padding: 20px;
         gap: 50px;
+    }
+
+    .we-are-gamer {
+        padding: 50px;
+    }
+
+    .gamer-container {
+        flex-direction: column;
+    }
+
+    .gamer-img img {
+        width: 100%;
+    }
+
+    .gamer-title {
+        text-align: center;
+        font-size: 2.5rem;
+    }
+
+    .gamer-purpose-text {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .gamer-description,
+    .gamer-btn {
+        text-align: center;
     }
 
     .funny-videos {
@@ -598,4 +730,22 @@ footer {
         font-size: .7rem;
         font-weight: 600;
     }
+
+    .footer-content {
+        padding: 120px 30px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .f-links {
+        font-size: 1rem;
+    }
+
+    .icon {
+        width: 90%;
+    }
+
 }
